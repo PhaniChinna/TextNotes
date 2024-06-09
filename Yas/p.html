@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="./exploringCal.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Calculator</title>
+    <style>
+      .Calc_Container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 300px;
+        border: 2px solid darkgray;
+        padding: 5px;
+      }
+      .Cal_num_btn {
+        padding: 12px;
+        width: 80px;
+        margin: 8px;
+        border: 1px solid darkgray;
+        cursor: pointer;
+        background-color: dodgerblue;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+      .Cal_display_input {
+        width: 250px;
+        padding: 12px;
+        background-color: lightblue;
+        border: 2px solid black;
+        border-radius: 10px;
+        color: black;
+        text-align: right;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Calc_Container" id="root">
+      <div>
+        <input id="InputDisplay" class="Cal_display_input" type="" />
+      </div>
+      <div>
+        <button class="Cal_num_btn" id="1_btn">1</button>
+        <button class="Cal_num_btn" id="2_btn">2</button>
+        <button class="Cal_num_btn" id="3_btn">3</button>
+      </div>
+      <div>
+        <button class="Cal_num_btn" id="4_btn">4</button>
+        <button class="Cal_num_btn" id="5_btn">5</button>
+        <button class="Cal_num_btn" id="6_btn">6</button>
+      </div>
+      <div>
+        <button class="Cal_num_btn" id="7_btn">7</button>
+        <button class="Cal_num_btn" id="8_btn">8</button>
+        <button class="Cal_num_btn" id="9_btn">9</button>
+      </div>
+      <button class="Cal_num_btn" id="0_btn">0</button>
+    </div>
+  </body>
+</html>
